@@ -12,18 +12,18 @@ public class AppiumBasics extends BaseClass
 		public void test1() throws MalformedURLException, InterruptedException
 		{
 			driver.findElement(AppiumBy.accessibilityId(TestConstants.preferenceButton)).click();
-			driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\'3. Preference dependencies\']")).click();
+			driver.findElement(By.xpath(TestConstants.preferenceDependecies)).click();
 			Thread.sleep(500);
-			driver.findElement(By.id("android:id/checkbox")).click();
-			driver.findElement(By.xpath("//android.widget.LinearLayout[2]")).click();
-			String wifiDialogHeader= driver.findElement(By.id("android:id/alertTitle")).getText();
+			driver.findElement(By.id(TestConstants.wifiCheckBox)).click();
+			driver.findElement(By.xpath(TestConstants.wifiSettingstitle)).click();
+			String wifiDialogHeader= driver.findElement(By.id(TestConstants.wifiAlertTitle)).getText();
 			
 			//Assertion of dialog title
 			Assert.assertEquals("WiFi settings",wifiDialogHeader);
 			
 			// Set Wi-Fi name
-			driver.findElement(By.id("android:id/edit")).sendKeys("Test Wifi");
-			driver.findElements(AppiumBy.className("android.widget.Button")).get(1).click();
+			driver.findElement(By.id(TestConstants.wifiNameTextBox)).sendKeys("Test Wifi");
+			driver.findElements(AppiumBy.className(TestConstants.dialogOkbutton)).get(1).click();
 			
 		}
 	}

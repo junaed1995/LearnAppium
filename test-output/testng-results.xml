@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-01T18:43:40 IST" name="Default suite" finished-at="2023-04-01T18:44:06 IST" duration-ms="25016">
+    <groups>
+    </groups>
+    <test started-at="2023-04-01T18:43:40 IST" name="Default test" finished-at="2023-04-01T18:44:06 IST" duration-ms="25016">
+      <class name="Appiumproj.Appium.AppiumBasics">
+        <test-method is-config="true" signature="SetupClass()[pri:0, instance:Appiumproj.Appium.AppiumBasics@8f4ea7c]" started-at="2023-04-01T18:43:41 IST" name="SetupClass" finished-at="2023-04-01T18:43:58 IST" duration-ms="17362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupClass -->
+        <test-method signature="test1()[pri:0, instance:Appiumproj.Appium.AppiumBasics@8f4ea7c]" started-at="2023-04-01T18:43:58 IST" name="test1" finished-at="2023-04-01T18:44:05 IST" duration-ms="7196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="ShutdownClass()[pri:0, instance:Appiumproj.Appium.AppiumBasics@8f4ea7c]" started-at="2023-04-01T18:44:05 IST" name="ShutdownClass" finished-at="2023-04-01T18:44:06 IST" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShutdownClass -->
+      </class> <!-- Appiumproj.Appium.AppiumBasics -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
